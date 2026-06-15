@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>HCMUE-SEGL: Student Engagement in Group Learning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     body {
@@ -46,18 +47,21 @@
     }
 
     .button {
-      display: inline-block;
-      background: #1f77b4;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #333;
       color: white;
       padding: 12px 24px;
       margin: 6px;
-      border-radius: 8px;
+      border-radius: 999px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
     }
-
+    
     .button:hover {
-      background: #155a8a;
+      background: #555;
     }
 
     section {
@@ -98,27 +102,45 @@
   </div>
 
   <div class="authors">
-    Hung Q. Nguyen, Dat Ly, Nha Tran, Tri Le, Hung Nguyen, Hien D. Nguyen
+    Hung Q. Nguyen<sup>1</sup>, Dat Ly<sup>1</sup>, Nha Tran<sup>2,3,1,*</sup>, 
+    Tri Le<sup>1</sup>, Hung Nguyen<sup>1</sup>, and Hien D. Nguyen<sup>2,3</sup>
   </div>
-
+  
   <div class="affiliations">
-    Ho Chi Minh City University of Education<br>
-    University of Information Technology, Vietnam National University Ho Chi Minh City
+    <sup>1</sup>Faculty of Information Technology, Ho Chi Minh City University of Education, Ho Chi Minh City, Vietnam<br>
+    <sup>2</sup>Faculty of Computer Science, University of Information Technology, Ho Chi Minh City, Vietnam<br>
+    <sup>3</sup>Vietnam National University, Ho Chi Minh City, Vietnam
   </div>
 
   <div class="buttons">
-    <a class="button" href="paper.pdf">Paper</a>
-    <a class="button" href="https://your-dataset-link-here" target="_blank">Dataset</a>
-    <a class="button" href="https://github.com/HungNguyenHcmue/HCMUE-SEGL.git" target="_blank">Code</a>
+    <a class="button" href="paper.pdf">
+      <i class="fa-solid fa-file-pdf"></i> Paper
+    </a>
+  
+    <a class="button" href="https://your-dataset-link-here" target="_blank">
+      <i class="fa-solid fa-database"></i> Dataset
+    </a>
+  
+    <a class="button" href="https://github.com/HungNguyenHcmue/HCMUE-SEGL" target="_blank">
+      <i class="fa-brands fa-github"></i> Code
+    </a>
   </div>
 
   <section>
     <h2>Abstract</h2>
     <p>
-      This paper proposes MoGLE-Net, a multimodal deep learning framework for assessing student engagement
-      in group learning environments. The model integrates skeleton-based posture, full-body action features,
-      facial emotion, and classroom context. A hierarchical attention-based fusion strategy using Self-Attention
-      and Cross-Attention is employed to capture relationships among behavioral, emotional, and contextual cues.
+      Group-based learning has become a cornerstone of modern education, fostering collaboration, 
+      critical thinking, and enhanced problem-solving skills among students. In this study, 
+      a deep learning framework, called MoGL-Net, is proposed. This framework integrates 
+      skeleton-based posture, sequential action features, facial emotion, and classroom context 
+      to assess student engagement. Besides, a fusion strategy employing Self-Attention and 
+      Cross-Attention mechanisms is utilized to capture interdependencies between them. 
+      Additionally, this study also introduces a real-world dataset, HCMUE-SEGL, consisting of 
+      1,663 video segments collected from 61 students participating in small-group learning 
+      activities. Experiment results show that the MoGL-Net model achieves an accuracy of 
+      90.70% on HCMUE-SEGL, highlighting the potential of multimodal learning for developing 
+      intelligent systems to monitor and provide objective classroom analytics in group learning 
+      environments.
     </p>
   </section>
 
