@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HCMUE-SEGL: Student Engagement in Group Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 950px;
+      margin: auto;
+      padding: 35px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .conference {
+      text-align: center;
+      font-size: 22px;
+      color: #555;
+      margin-bottom: 18px;
+    }
+
+    .authors {
+      text-align: center;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .affiliations {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .button {
+      display: inline-block;
+      background: #1f77b4;
+      color: white;
+      padding: 12px 24px;
+      margin: 6px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #155a8a;
+    }
+
+    section {
+      margin-top: 42px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 25px auto;
+      border-radius: 10px;
+    }
+
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    .footer {
+      text-align: center;
+      color: #666;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>
+    Group Learning Integrating Behaviors and Emotions Recognition to Assess Student Engagement in Classroom Context
+  </h1>
+
+  <div class="conference">
+    KSE 2025
+  </div>
+
+  <div class="authors">
+    Hung Q. Nguyen, Dat Ly, Nha Tran, Tri Le, Hung Nguyen, Hien D. Nguyen
+  </div>
+
+  <div class="affiliations">
+    Ho Chi Minh City University of Education<br>
+    University of Information Technology, Vietnam National University Ho Chi Minh City
+  </div>
+
+  <div class="buttons">
+    <a class="button" href="paper.pdf">Paper</a>
+    <a class="button" href="https://your-dataset-link-here" target="_blank">Dataset</a>
+    <a class="button" href="https://github.com/your-username/HCMUE-SEGL" target="_blank">Code</a>
+  </div>
+
+  <section>
+    <h2>Abstract</h2>
+    <p>
+      This paper proposes MoGLE-Net, a multimodal deep learning framework for assessing student engagement
+      in group learning environments. The model integrates skeleton-based posture, full-body action features,
+      facial emotion, and classroom context. A hierarchical attention-based fusion strategy using Self-Attention
+      and Cross-Attention is employed to capture relationships among behavioral, emotional, and contextual cues.
+    </p>
+  </section>
+
+  <section>
+    <h2>Dataset: HCMUE-SEGL</h2>
+    <p>
+      HCMUE-SEGL is a real-world multimodal dataset for student engagement assessment in small-group learning
+      activities. The dataset contains 1,663 annotated video segments collected from 61 students.
+    </p>
+
+    <ul>
+      <li>Task: Student engagement recognition in group learning</li>
+      <li>Number of samples: 1,663 video segments</li>
+      <li>Participants: 61 students</li>
+      <li>Engagement levels: Disengaged, Normal, Engaged, Very Engaged</li>
+      <li>Modalities: skeleton pose, full-body RGB action, facial emotion, classroom context</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Method: MoGLE-Net</h2>
+    <p>
+      MoGLE-Net contains four branches: a pose skeleton branch, an RGB action branch, a facial emotion branch,
+      and a group context branch. Behavior and emotion features are first fused using Self-Attention.
+      Then, Cross-Attention is used to align individual behavior-emotion features with group-level classroom context.
+    </p>
+  </section>
+
+  <section>
+    <h2>Results</h2>
+    <ul>
+      <li>Accuracy: 90.70%</li>
+      <li>F1-score: 90.44%</li>
+      <li>Precision: 90.83%</li>
+      <li>Recall: 90.70%</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Dataset Access</h2>
+    <p>
+      The dataset is released for academic research purposes. Due to privacy considerations,
+      the full dataset may be provided upon request.
+    </p>
+  </section>
+
+  <section>
+    <h2>Citation</h2>
+    <pre>
+@inproceedings{nguyen2025mogle,
+  title={Group learning Integrating Behaviors and Emotions recognition to Assess Student Engagement in Classroom Context},
+  author={Nguyen, Hung Q. and Ly, Dat and Tran, Nha and Le, Tri and Nguyen, Hung and Nguyen, Hien D. Nguyen},
+  booktitle={Proceedings of the 17th International Conference on Knowledge and Systems Engineering},
+  pages={454--459},
+  year={2025}
+}
+    </pre>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      For questions about the dataset or code, please contact the authors.
+    </p>
+  </section>
+
+  <div class="footer">
+    © 2025 HCMUE-SEGL Project
+  </div>
+
+</body>
+</html>
