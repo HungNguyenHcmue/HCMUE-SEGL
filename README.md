@@ -15,7 +15,7 @@
 </p>
 
 <p>
-  <a href="https://doi.org/10.1109/KSE65613.2025.10981613">
+  <a href="docs/paper.pdf">
     <img src="https://img.shields.io/badge/Paper-IEEE%20KSE%202025-blue?style=flat-square&logo=ieee" alt="Paper">
   </a>
   <a href="https://drive.google.com/drive/folders/14M_DLRPvoNvquJCZN4482E0KOsjjoWRq?usp=sharing">
@@ -35,6 +35,12 @@
 ## 📋 Overview
 
 **HCMUE-SEGL** is a real-world multimodal dataset designed for assessing **student engagement in small-group learning** environments. It captures behavioral, emotional, and group-context data from multiple camera angles, providing diverse perspectives for group learning engagement analysis.
+<p align="center">
+  <img src="docs/Example_data.png"> width="850" alt="MoGLE-Net architecture">
+  <br>
+  <em>Fig. 1 — Examples of camera angle configurations and seating arrangements.</em>
+</p>
+
 
 | Property | Details |
 |---|---|
@@ -49,7 +55,7 @@
 <p align="center">
   <img src="docs/method.png" width="850" alt="MoGLE-Net architecture">
   <br>
-  <em>Fig. 1 — Overview of the multimodal pipeline used to process HCMUE-SEGL.</em>
+  <em>Fig. 2 — Overview of the multimodal pipeline used to process HCMUE-SEGL.</em>
 </p>
 
 ---
