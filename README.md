@@ -1,7 +1,19 @@
 <div align="center">
 
 <h1>🎓 HCMUE-SEGL</h1>
-<h3>HCMUE Student Engagement in Group Learning Dataset</h3>
+<h2>Group Learning Integrating Behaviors and Emotions Recognition to Assess Student Engagement in Classroom Context</h2>
+<h3><em>The 17th International Conference on Knowledge and Systems Engineering (KSE 2025)</em></h3>
+
+<p>
+  Hung Q. Nguyen<sup>1</sup>, Dat Ly<sup>1</sup>, Nha Tran<sup>2,3,1,*</sup>, Tri Le<sup>1</sup>, Hung Nguyen<sup>1</sup>, and Hien D. Nguyen<sup>2,3</sup>
+</p>
+<p>
+  <sup>1</sup>Faculty of Information Technology, Ho Chi Minh City University of Education, Ho Chi Minh City, Vietnam
+  <br>
+  <sup>2</sup>Faculty of Computer Science, University of Information Technology, Ho Chi Minh City, Vietnam
+  <br>
+  <sup>3</sup>Vietnam National University, Ho Chi Minh City, Vietnam
+</p>
 
 <p>
   <a href="https://doi.org/10.1109/KSE65613.2025.10981613">
@@ -13,14 +25,9 @@
   <a href="https://hungnguyenhcmue.github.io/HCMUE-SEGL/">
     <img src="https://img.shields.io/badge/Project-Page-orange?style=flat-square&logo=github" alt="Project Page">
   </a>
-  <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=flat-square" alt="License">
 </p>
 
-<p>
-  <b>Group learning Integrating Behaviors and Emotions recognition to Assess Student Engagement in Classroom Context</b><br>
-  Hung Q. Nguyen, Dat Ly, Nha Tran*, Tri Le, Hung Nguyen, Hien D. Nguyen<br>
-  <em>The 17th International Conference on Knowledge and Systems Engineering (KSE 2025)</em>
-</p>
+<p><b>HCMUE Student Engagement in Group Learning Dataset</b></p>
 
 </div>
 
