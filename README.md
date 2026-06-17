@@ -226,14 +226,30 @@ For training, use the `MultiBranchDataset` provided in [`dataloader.py`](dataloa
 
 ```python
 from pathlib import Path
-from dataloader import MultiBranchDataset, mb_collate
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, Subset
+from dataloader import MultiBranchDataset, mb_collate, split_by_angle
 
-ROOT = Path("/path/to/HCMUE-SEGL")
+ROOT = Path("/content/drive/MyDrive/HCMUE-SEGL")
 ANGLE_ROOTS = [ROOT / f"Angle{i}" / "Table1" for i in range(1, 5)]
-
 ds = MultiBranchDataset(ANGLE_ROOTS)
-loader = DataLoader(ds, batch_size=4, shuffle=True, collate_fn=mb_collate)
+
+train_ids, test_ids = split_by_angle(ds, test_size=0.2, seed=42)
+
+train_loader = DataLoader(
+    Subset(ds, train_ids),
+    batch_size=4,
+    shuffle=True,
+    collate_fn=mb_collate,
+    num_workers=2
+)
+
+test_loader = DataLoader(
+    Subset(ds, test_ids),
+    batch_size=4,
+    shuffle=False,
+    collate_fn=mb_collate,
+    num_workers=2
+)
 ```
 
 ---
