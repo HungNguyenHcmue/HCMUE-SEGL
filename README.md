@@ -1,7 +1,6 @@
 <div align="center">
 
-<h1>🎓 HCMUE-SEGL</h1>
-<h2>Group Learning Integrating Behaviors and Emotions Recognition to Assess Student Engagement in Classroom Context</h2>
+<h1>🎓 HCMUE-SEGL <br> Group Learning Integrating Behaviors and Emotions Recognition to Assess Student Engagement in Classroom Context</h1>
 <h3><em>The 17th International Conference on Knowledge and Systems Engineering (KSE 2025)</em></h3>
 
 <p>
