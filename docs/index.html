@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HCMUE-SEGL: Student Engagement in Group Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 950px;
+      margin: auto;
+      padding: 35px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .conference {
+      text-align: center;
+      font-size: 22px;
+      color: #555;
+      margin-bottom: 18px;
+    }
+
+    .authors {
+      text-align: center;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .affiliations {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #333;
+      color: white;
+      padding: 12px 24px;
+      margin: 6px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .button:hover {
+      background: #555;
+    }
+
+    section {
+      margin-top: 42px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 25px auto;
+      border-radius: 10px;
+    }
+
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    .footer {
+      text-align: center;
+      color: #666;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>
+    Group Learning Integrating Behaviors and Emotions Recognition to Assess Student Engagement in Classroom Context
+  </h1>
+
+  <div class="conference">
+    KSE 2025
+  </div>
+
+  <div class="authors">
+    Hung Q. Nguyen<sup>1</sup>, Dat Ly<sup>1</sup>, Nha Tran<sup>2,3,1,*</sup>, 
+    Tri Le<sup>1</sup>, Hung Nguyen<sup>1</sup>, and Hien D. Nguyen<sup>2,3</sup>
+  </div>
+  
+  <div class="affiliations">
+    <sup>1</sup>Faculty of Information Technology, Ho Chi Minh City University of Education, Ho Chi Minh City, Vietnam<br>
+    <sup>2</sup>Faculty of Computer Science, University of Information Technology, Ho Chi Minh City, Vietnam<br>
+    <sup>3</sup>Vietnam National University, Ho Chi Minh City, Vietnam
+  </div>
+
+  <div class="buttons">
+    <a class="button" href="paper.pdf">
+      <i class="fa-solid fa-file-pdf"></i> Paper
+    </a>
+  
+    <a class="button" href="https://github.com/HungNguyenHcmue/HCMUE-SEGL" target="_blank">
+      <i class="fa-brands fa-github"></i> Code
+    </a>
+  </div>
+
+  <img src="Example_data.png" alt="Example data from four camera angles in HCMUE-SEGL">
+
+  <section>
+    <h2>Abstract</h2>
+    <p>
+      Group-based learning has become a cornerstone of modern education, fostering collaboration, 
+      critical thinking, and enhanced problem-solving skills among students. In this study, 
+      a deep learning framework, called MoGL-Net, is proposed. This framework integrates 
+      skeleton-based posture, sequential action features, facial emotion, and classroom context 
+      to assess student engagement. Besides, a fusion strategy employing Self-Attention and 
+      Cross-Attention mechanisms is utilized to capture interdependencies between them. 
+      Additionally, this study also introduces a real-world dataset, HCMUE-SEGL, consisting of 
+      1,663 video segments collected from 61 students participating in small-group learning 
+      activities. Experiment results show that the MoGL-Net model achieves an accuracy of 
+      90.70% on HCMUE-SEGL, highlighting the potential of multimodal learning for developing 
+      intelligent systems to monitor and provide objective classroom analytics in group learning 
+      environments.
+    </p>
+  </section>
+
+  <section>
+    <h2>Dataset: HCMUE-SEGL</h2>
+    <p>
+      HCMUE-SEGL is a real-world multimodal dataset for student engagement assessment in small-group learning
+      activities. The dataset contains 1,663 annotated video segments collected from 61 students.
+    </p>
+
+    <ul>
+      <li>Task: Student engagement recognition in group learning</li>
+      <li>Number of samples: 1,663 video segments</li>
+      <li>Participants: 61 students</li>
+      <li>Engagement levels: Disengaged, Normal, Engaged, Very Engaged</li>
+      <li>Modalities: skeleton pose, full-body RGB action, facial emotion, classroom context</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Method: MoGLE-Net</h2>
+    <p>
+      MoGLE-Net contains four branches: a pose skeleton branch, an RGB action branch, a facial emotion branch,
+      and a group context branch. Behavior and emotion features are first fused using Self-Attention.
+      Then, Cross-Attention is used to align individual behavior-emotion features with group-level classroom context.
+    </p>
+    <img src="method.png" alt="Overview of the MoGLE-Net architecture">
+  </section>
+
+  <section>
+    <h2>Results</h2>
+    <ul>
+      <li>Accuracy: 90.70%</li>
+      <li>F1-score: 90.44%</li>
+      <li>Precision: 90.83%</li>
+      <li>Recall: 90.70%</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Dataset Access</h2>
+    <p>
+      The dataset is released for academic research purposes. Due to privacy considerations,
+      the full dataset may be provided upon request.
+    </p>
+  </section>
+
+  <section>
+    <h2>Citation</h2>
+    <pre>
+@inproceedings{nguyen2025group,
+  title={Group Learning Integrating Behaviors and Emotions Recognition to Assess Student Engagement in Classroom Context},
+  author={Nguyen, Hung Q and Ly, Dat and Tran, Nha and Le, Tri and Nguyen, Hung and Nguyen, Hien D},
+  booktitle={2025 17th International Conference on Knowledge and System Engineering (KSE)},
+  pages={1--6},
+  year={2025},
+  organization={IEEE}
+}
+    </pre>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      For questions about the dataset or code, please open a GitHub issue or contact the corresponding author:
+    </p>
+  
+    <p>
+      <strong>Nha Tran</strong> — <a href="mailto:nhatt@hcmue.edu.vn">nhatt@hcmue.edu.vn</a>
+    </p>
+  
+    <p>
+      Faculty of Information Technology, Ho Chi Minh City University of Education
+    </p>
+  </section>
+
+  <div class="footer">
+    © 2025 HCMUE-SEGL Project
+  </div>
+
+</body>
+</html>
